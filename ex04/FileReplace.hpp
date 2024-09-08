@@ -15,7 +15,7 @@ private:
 	std::string ReplaceOccurrences(const std::string &line) const;
 
 public:
-	FileReplace(const std::string &filename, const std::string &s1, const std::string &s2);
+	FileReplace(const std::string &filename, const std::string &s1, const std::string &s2) : filename_(filename), s1_(s1), s2_(s2) {}
 	bool PerformReplacement();
 };
 

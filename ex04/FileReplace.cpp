@@ -1,13 +1,5 @@
 #include "FileReplace.hpp"
 
-FileReplace::FileReplace(const std::string &filename, const std::string &s1, const std::string &s2)
-{
-	filename_ = filename;
-	s1_ = s1;
-	s2_ = s2;
-
-}
-
 std::string FileReplace::ReplaceOccurrences(const std::string &line) const
 {
 	std::string result;
